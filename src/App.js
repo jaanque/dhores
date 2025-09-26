@@ -1,10 +1,18 @@
 import './App.css';
-import Hero from './Hero';
+import Header from './components/Header/Header';
+import Hero from './components/Hero/Hero';
+import Listings from './components/Listings/Listings';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
     <div className="App">
-      <Hero />
+      <Header />
+      <main>
+        <Hero />
+        <Listings />
+      </main>
+      <Footer />
     </div>
   );
 }
